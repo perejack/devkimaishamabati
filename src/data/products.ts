@@ -7,6 +7,14 @@ import maishaTile from "@/assets/products/maisha-tile.jpg";
 import simbaCement32 from "@/assets/products/simba-cement-32.jpg";
 import simbaCement42 from "@/assets/products/simba-cement-42.jpg";
 import pavingBlocks from "@/assets/products/paving-blocks.jpg";
+import d8Bar from "@/assets/products/d8-bar.jpg";
+import d10Bar from "@/assets/products/d10-bar.jpg";
+import d12Bar from "@/assets/products/d12-bar.jpg";
+import d16Bar from "@/assets/products/d16-bar.jpg";
+import d25Bar from "@/assets/products/d25-bar.jpg";
+import r6Bar from "@/assets/products/r6-bar.jpg";
+import r8Bar from "@/assets/products/r8-bar.jpg";
+import r10Bar from "@/assets/products/r10-bar.jpg";
 
 export interface Product {
   id: string;
@@ -14,7 +22,7 @@ export interface Product {
   image: string;
   description: string;
   price: string;
-  category: "mabati" | "cement";
+  category: "mabati" | "cement" | "steel";
   colors?: string[];
   specs?: Record<string, string>;
 }
@@ -99,6 +107,78 @@ export const products: Product[] = [
     price: "KSh 640/sqm",
     category: "cement",
     specs: { Strength: "High Compression", Weight: "Per Square Meter", Standard: "60mm Thickness", Uses: "Parking areas, pathways, roads" },
+  },
+  {
+    id: "d8-steel-bar",
+    name: "D8 Steel Bar",
+    image: d8Bar,
+    description: "High-quality 8mm deformed steel bar for construction and reinforcement applications.",
+    price: "KSh 450 per bar",
+    category: "steel",
+    specs: { Diameter: "8mm", Type: "Deformed", Grade: "FE500", Uses: "Light construction and reinforcement" },
+  },
+  {
+    id: "d10-steel-bar",
+    name: "D10 Steel Bar",
+    image: d10Bar,
+    description: "10mm deformed steel bar for construction and reinforcement applications.",
+    price: "KSh 750 per bar",
+    category: "steel",
+    specs: { Diameter: "10mm", Type: "Deformed", Grade: "FE500", Uses: "Construction and reinforcement" },
+  },
+  {
+    id: "d12-steel-bar",
+    name: "D12 Steel Bar",
+    image: d12Bar,
+    description: "12mm deformed steel bar for construction and reinforcement applications.",
+    price: "KSh 1,020 per bar",
+    category: "steel",
+    specs: { Diameter: "12mm", Type: "Deformed", Grade: "FE500", Uses: "Construction and reinforcement" },
+  },
+  {
+    id: "d16-steel-bar",
+    name: "D16 Steel Bar",
+    image: d16Bar,
+    description: "16mm deformed steel bar for construction and reinforcement applications.",
+    price: "KSh 2,050 per bar",
+    category: "steel",
+    specs: { Diameter: "16mm", Type: "Deformed", Grade: "FE500", Uses: "Construction and reinforcement" },
+  },
+  {
+    id: "d25-steel-bar",
+    name: "D25 Steel Bar",
+    image: d25Bar,
+    description: "25mm deformed steel bar for heavy construction and reinforcement applications.",
+    price: "KSh 5,750 per bar",
+    category: "steel",
+    specs: { Diameter: "25mm", Type: "Deformed", Grade: "FE500", Uses: "Heavy construction and reinforcement" },
+  },
+  {
+    id: "r6-steel-bar",
+    name: "R6 Steel Bar",
+    image: r6Bar,
+    description: "6mm round steel bar for light construction and binding applications.",
+    price: "KSh 210 per bar",
+    category: "steel",
+    specs: { Diameter: "6mm", Type: "Round", Grade: "Mild Steel", Uses: "Light construction and binding" },
+  },
+  {
+    id: "r8-steel-bar",
+    name: "R8 Steel Bar",
+    image: r8Bar,
+    description: "8mm round steel bar for light construction and binding applications.",
+    price: "KSh 450 per bar",
+    category: "steel",
+    specs: { Diameter: "8mm", Type: "Round", Grade: "Mild Steel", Uses: "Light construction and binding" },
+  },
+  {
+    id: "r10-steel-bar",
+    name: "R10 Steel Bar",
+    image: r10Bar,
+    description: "10mm round steel bar for construction and binding applications.",
+    price: "KSh 850 per bar",
+    category: "steel",
+    specs: { Diameter: "10mm", Type: "Round", Grade: "Mild Steel", Uses: "Construction and binding" },
   },
 ];
 
